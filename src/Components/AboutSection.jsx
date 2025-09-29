@@ -18,7 +18,8 @@ const AboutSection = () => {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/subscribe", {
+      // fetch("/api/subscribe")
+      const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
