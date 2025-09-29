@@ -401,14 +401,15 @@ const TypingEffect = ({ texts, speed = 40, delay = 1500 }) => {
       >
          Hire Me
       </Link>
-      <a
-        href="./src/assets/Canada.pdf"
-        download="AloneCoder-CV.pdf"
-        className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold border transition-all hover:bg-[#FF9800]/10 hover:scale-105"
-        style={{ borderColor: "#FF9800", color: "#0D1B2A" }}
-      >
-        📄 Download CV
-      </a>
+     <a
+  href="/Canada.pdf"
+  download="AloneCoder-CV.pdf"
+  className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold border transition-all hover:bg-[#FF9800]/10 hover:scale-105"
+  style={{ borderColor: "#FF9800", color: "#0D1B2A" }}
+>
+  📄 Download CV
+</a>
+
     </div>
 
     {/* Background Glow Effect */}
