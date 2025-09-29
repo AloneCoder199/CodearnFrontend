@@ -6,7 +6,7 @@ import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import profileImg from "../assets/dp.jpg"; // apni image yahan rakho
 import { TypeAnimation } from "react-type-animation";
 import BackButton from "../Components/BackButton";
-import cv from "../assets/Canada.pdf"
+// import cv from "../assets/Canada.pdf"
 const skills = [
   { name: "React", percent: 90 },
   { name: "Node.js", percent: 82 },
@@ -402,7 +402,7 @@ const TypingEffect = ({ texts, speed = 40, delay = 1500 }) => {
          Hire Me
       </Link>
       <a
-        href={cv}
+        href="./src/assets/Canada.pdf"
         download="AloneCoder-CV.pdf"
         className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold border transition-all hover:bg-[#FF9800]/10 hover:scale-105"
         style={{ borderColor: "#FF9800", color: "#0D1B2A" }}
