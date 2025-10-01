@@ -28,7 +28,7 @@ const ProjectPage = () => {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const res = await fetch("/api/repos");
+       const res = await fetch(`${import.meta.env.VITE_API_URL}/repos`);
         if (!res.ok) throw new Error(`API Error: ${res.status}`);
         const data = await res.json();
         const filtered = data.filter((r) => !r.fork);
