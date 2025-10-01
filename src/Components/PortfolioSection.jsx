@@ -29,7 +29,7 @@ const PortfolioSection = () => {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/repos");
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/repos`);
         if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
         const data = await res.json();
 
