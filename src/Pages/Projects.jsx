@@ -28,7 +28,7 @@ const ProjectPage = () => {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/repos");
+        const res = await fetch("/api/repos");
         if (!res.ok) throw new Error(`API Error: ${res.status}`);
         const data = await res.json();
         const filtered = data.filter((r) => !r.fork);
@@ -70,7 +70,7 @@ const ProjectPage = () => {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-extrabold"
         >
-          🚀 <span className="text-[#00BCD4]">CodEarn Tech</span>
+           <span className="text-[#00BCD4]">CodEarn Tech</span>
         </motion.h1>
 
         <motion.p
@@ -160,7 +160,7 @@ const ProjectPage = () => {
 
           {/* Bullet Points */}
           <ul className="space-y-3 text-gray-600">
-            {["⚡ Fully responsive design", "🚀 Optimized performance", "🔒 Secure backend integrations"].map(
+            {[" Fully responsive design", " Optimized performance", " Secure backend integrations"].map(
               (point, i) => (
                 <motion.li
                   key={i}
@@ -199,7 +199,7 @@ const ProjectPage = () => {
                 rel="noreferrer"
                 className="px-6 py-3 rounded-xl bg-[#FF9800] hover:bg-[#F57C00] text-white font-semibold shadow-lg transition"
               >
-                Live Demo 🚀
+                Live Demo 
               </motion.a>
             )}
             <motion.a
@@ -223,7 +223,7 @@ const ProjectPage = () => {
         className="max-w-6xl mx-auto text-center py-16"
       >
         <h3 className="text-2xl md:text-3xl font-bold text-[#0D1B2A]">
-          🌟 Trusted by Startups & Enterprises
+           Trusted by Startups & Enterprises
         </h3>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
           Our projects are powering businesses in multiple industries, helping them scale with confidence.
