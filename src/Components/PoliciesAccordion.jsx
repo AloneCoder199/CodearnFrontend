@@ -13,7 +13,7 @@ We collect your name, email, and message to provide services & updates.
 - Used only for sending daily updates, course notifications, and reminders.
 - Email is never shared or sold.
 - Subscriber data is retained until you unsubscribe.
-- Contact: contact@aapkidomain.com
+- Contact: codearntech.cloud/contact
 `,
   },
   {
@@ -45,7 +45,7 @@ We use cookies for a better experience:
 Refund rules:
 - Digital Courses: 7-day refund if <10% accessed.
 - Web Services/Projects: Partial refunds by milestones.
-- Request: refunds@aapkidomain.com
+- Request: codearntech.cloud/contact
 - Response: 7–14 business days.
 `,
   },
@@ -190,7 +190,7 @@ const PoliciesPage = () => {
                         <li>
                           Contact:{" "}
                           <span className="text-blue-600">
-                            contact@aapkidomain.com
+                            codearntech@gmail.com
                           </span>
                         </li>
                       </ul>
@@ -239,7 +239,7 @@ const PoliciesPage = () => {
                         <li>
                           Request at:{" "}
                           <span className="text-blue-600">
-                            refunds@aapkidomain.com
+                            codearntech@gmail.com
                           </span>
                         </li>
                         <li>Response time: 7–14 business days.</li>
