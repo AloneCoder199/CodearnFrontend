@@ -26,6 +26,7 @@ import PortfolioSection from "./Components/PortfolioSection.jsx";
 import Policies from "./Components/PoliciesAccordion.jsx";
 import PoliciesPageSkeleton from "./Components/Skeleton/PoliciesPageSkeleton.jsx";
 import FooterSkeleton from "../src/Components/Skeleton/FooterSkeleton.jsx"
+import Alert from "./Components/Alert.jsx";
 function ProgressHandler() {
   const location = useLocation();
 
@@ -66,7 +67,7 @@ function App() {
         <Route path="/Courses" element={loading ? <CoursesListSkeleton/> : <CoursesList/>} />
         <Route path="/Policies" element={loading ? <PoliciesPageSkeleton/> : <Policies/>} />
       </Routes>
-      
+      <Alert/>
       {loading ? <FooterSkeleton/> : <Footer />}
       <Chatbot />
     </Router>
